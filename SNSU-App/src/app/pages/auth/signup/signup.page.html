@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title class="ion-text-center" style="color: white;">Create an Account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding signup-background">
+
+  <div class="logo-container ion-text-center">
+    <img src="/assets/image/snsu-logo.png" alt="SNSU Logo" class="snsu-logo" />
+  </div>
+
+  <h2 class="ion-text-center welcome-text">Sign Up</h2>
+
+  <ion-card class="signup-card">
+    <ion-card-content>
+      <form (ngSubmit)="signup()" novalidate>
+
+        <!-- Full Name -->
+        <ion-item lines="full" class="custom-input">
+          <ion-icon name="person-outline" slot="start"></ion-icon>
+          <ion-label position="stacked">Full Name</ion-label>
+          <ion-input type="text" [(ngModel)]="full_name" name="full_name" placeholder="Enter your full name" required></ion-input>
+        </ion-item>
+
+        <!-- Email -->
+        <ion-item lines="full" class="custom-input">
+          <ion-icon name="mail-outline" slot="start"></ion-icon>
+          <ion-label position="stacked">Email</ion-label>
+          <ion-input type="email" [(ngModel)]="email" name="email" placeholder="Enter your email" required></ion-input>
+        </ion-item>
+
+        <!-- Password -->
+        <ion-item lines="full" class="custom-input">
+          <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+          <ion-label position="stacked">Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password" name="password" placeholder="Enter your password" required></ion-input>
+        </ion-item>
+
+        <!-- Register Button -->
+        <ion-button expand="block" color="success" type="submit" class="ion-margin-top">
+          REGISTER
+        </ion-button>
+
+      </form>
+
+      <ion-text color="medium">
+        <p class="ion-text-center ion-margin-top">
+          Already have an account?
+          <a routerLink="/login"><strong>Log In</strong></a>
+        </p>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

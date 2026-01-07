@@ -1,0 +1,57 @@
+.signup-background {
+  background-color: #ffffff;
+}
+
+.logo-container {
+  margin-top: 24px;
+  margin-bottom: 10px;
+
+  .snsu-logo {
+    width: 120px;
+    height: auto;
+  }
+}
+
+.welcome-text {
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.signup-card {
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+}
+
+ion-label {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+ion-input {
+  color: #ffffff;
+}
+
+ion-button {
+  color: #ffffff !important;
+  --color: #ffffff !important;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.welcome-text {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+ion-button::part(native) {
+  color: #ffffff !important;
+}
